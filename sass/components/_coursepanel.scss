@@ -1,0 +1,57 @@
+.courses{
+
+}
+
+.panel{
+    height: 35rem;
+    width: 30rem;
+    background-color: rgb(250, 250, 250);
+    border-bottom: .7rem solid green;
+    box-shadow: 0px 0px 10px rgba(158,158,158,1);
+    &:hover{
+        transition: all .3s;
+        box-shadow: 0px 0px 15px rgba(158,158,158,1);
+        h3{
+            opacity: 1;
+            transition: all .3s;
+            position: absolute;
+            bottom: 0;
+        }
+
+        
+        
+    }
+    
+
+    &__image{
+        width: 100%;
+        height: 45%;
+        padding: 1rem;
+        
+        background-image: url(../img/science.png);
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+
+        
+        
+        h3{
+            color: white;
+            font-size: 2.5rem;
+            letter-spacing: .2rem;
+            opacity: 0;
+            bottom: -1.5rem;
+        }
+        
+
+    }
+
+    &__info{
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+   
+
+}
+

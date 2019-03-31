@@ -1,0 +1,29 @@
+.header{
+    width: 100%;
+    padding-bottom: 5rem;
+    background: linear-gradient(114deg,
+    rgba(18,255,4, 0.5) 13%, 
+    rgba(133,255,126, 0.3) 100%), url(../img/1__gg1Te-7SJfk9E2D-mORfw.png);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 85%, 71% 85%, 0 100%, 0 100%, 0 0);
+
+    display: flex;
+    justify-content: space-between;
+    
+    &__title{
+        color: #777;
+        flex: 0 2 155rem;
+        padding: 5rem 5rem 10rem 10rem;
+    }
+
+    &__paragraph{
+        font-size: 2rem;
+        color: rgb(245, 245, 245);
+    }
+
+    &__login{
+        padding: 5rem;
+        flex: 0 0 50rem;
+        /* background: rgb(22, 22, 22); */
+    }
+}

@@ -1,0 +1,29 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: .5rem 1.5rem;
+        display: inline-block;
+        transition: all .2s;
+        color: white;
+        background: linear-gradient(120deg, #01dc1d 0%, #03a30c 145%); 
+        /* background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00); */
+
+        //CHANGE FOR BUTTON ELEMENT
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 .7rem 2rem rgba(0,0,0, .2);
+
+       
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}
