@@ -1,25 +1,42 @@
 .courses{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
 .panel{
-    height: 35rem;
+    height: 40rem;
     width: 30rem;
+    margin-bottom: 5rem;
     background-color: rgb(250, 250, 250);
     border-bottom: .7rem solid green;
     box-shadow: 0px 0px 10px rgba(158,158,158,1);
+    position: relative;
+    overflow: hidden;
+
     &:hover{
         transition: all .3s;
         box-shadow: 0px 0px 15px rgba(158,158,158,1);
-        h3{
+
+        .heading-course-title{
             opacity: 1;
             transition: all .3s;
             position: absolute;
-            bottom: 0;
+            top: -4rem;
         }
 
-        
-        
+        .panel__image{
+            filter: blur(1.3px) saturate(1) opacity(0.90) contrast(108%);
+            transform: scale(1.1);
+            transition: all .3s ease-in-out;
+        }
+
+        .panel__image--icon{
+            top: 1rem;
+            opacity: 1;
+            transition: all .3s;
+        }
     }
     
 
@@ -33,24 +50,71 @@
         background-position: bottom;
         position: relative;
 
-        
-        
-        h3{
-            color: white;
-            font-size: 2.5rem;
-            letter-spacing: .2rem;
-            opacity: 0;
-            bottom: -1.5rem;
+        &--2{
+            background-image: url(../../img/Computer-Science-HD-Image.png);
         }
         
+        &--icon{
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            top: -1.5rem;
+            right: 1rem;
+            opacity: 0;
+            fill: rgb(3, 191, 20);
+            cursor: pointer;
+
+            &:hover{
+                
+                transform: scale(1.2);
+                transition: all .3s;
+            }
+           
+        }
 
     }
 
     &__info{
         padding: 1.5rem;
         font-size: 1.3rem;
+        position: relative;
     }
 
+    &__icons{
+        display: flex;
+
+        &--rating{
+            display: flex;
+            padding-left: 5px;
+            height: 2rem;
+            width: 50%;
+            .icon-star{
+                fill: orange;
+            }
+            
+        }
+
+
+        &--feedback{
+            height: 2rem;
+            width: 45%;
+            display: flex;
+            justify-content: flex-end;
+
+            .icon-clock{
+                width: 2rem;
+            }
+            .hours{
+                display: inline-block;
+                font-size: 1.2rem;
+                margin-left: 1rem;
+                align-content: center;
+            }
+            
+        }
+
+
+    }
    
 
 }
