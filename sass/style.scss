@@ -1,14 +1,16 @@
 @import "base/base";
 @import "base/typography";
 
-@import "abstract/variables";
+@import "abstract/keyframes";
 @import "abstract/utilities";
 
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
 
 @import "components/buttons";
 @import "components/loginpanel";
 @import "components/coursepanel";
+@import "components/languagebox";
 
 @import "pages/home";

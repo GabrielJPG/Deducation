@@ -1,6 +1,5 @@
 .login-panel{
     background-image: linear-gradient(136deg, rgb(22, 22, 22) 25%, rgba(238, 238, 238, 1) 10%);
-
     
     width: 80%;
     /* border-bottom: 4px solid rgb(3, 191, 20); */
@@ -12,6 +11,11 @@
     align-items: flex-start;
     flex-wrap: wrap;
     font-size: 1.7rem;
+
+    position: relative;
+	animation-name: loginPanel;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
     
     
     &__heading{
@@ -45,7 +49,7 @@
         padding: 1rem;
         border: none;
         border-radius: 2px;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3rem;
         border-bottom: 3px solid transparent;
         
         &:focus{
@@ -55,6 +59,20 @@
         }
     }
 
+    &__paragraph{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: #909497;
+        padding: 1rem;
 
+        a{
+            text-decoration: none;
+            color: #2980B9;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 }
 

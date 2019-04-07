@@ -92,13 +92,14 @@
     }
 
     &__info{
-        padding: 1.5rem;
+        padding: 2rem;
         font-size: 1.3rem;
         position: relative;
     }
 
     &__icons{
         display: flex;
+        
 
         &--rating{
             display: flex;

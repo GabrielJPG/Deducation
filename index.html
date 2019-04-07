@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yellow Education | Learn everywhere everytime</title>
+    <title>Deducation | Learn everytime everywhere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <script src="main.js"></script>
 </head>
 <body>
     <div class="container">
-        
-        
         <nav class="navigation">
                 <div class="navigation__logo">
                     <img src="img/UIHere.png">
@@ -20,7 +18,7 @@
                 <div class="navigation__main">
                     <ul class="navigation__nav">
                         <a href="#"><li class="navigation__items">Home</li></a>
-                        <a href="#"><li class="navigation__items">Courses</li></a>
+                        <a href="#courses"><li class="navigation__items">Courses</li></a>
                             <!-- <ul>
                                 <li class="navigation__items--course">Redes</li>
                                 <li class="navigation__items--course">Pau</li>
@@ -44,8 +42,6 @@
             <header class="header">
                 <div class="header__title">
                     <h1 class="heading-primary">Built for developers</h1>
-                    <h2 class="heading-secondary">everytime</h2>
-                    <h2 class="heading-secondary">everywhere</h2>
                     <div class="header__paragraph">
                         Deducaton is a platform inspired by the way you learn. Learn computer science form home anytime, everywhere.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur corrupti quo iure a velit dolore quis minima fuga aspernatur reiciendis quos, quia facilis qui ratione nihil saepe fugiat eveniet.
@@ -65,7 +61,8 @@
                                 <input type="text" placeholder="Password" id="password" class="login-panel__input">
                                 <a href="#" class="btn">Log In</a>
                                 <p class="login-panel__paragraph">
-                                    Forgot the password? click here
+                                    No registed yet? <a href=""> Sign up now!</a>
+                                    By clicking "Log in" you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails.</p>
                                 </p>
                             </div>
                         </form>
@@ -102,7 +99,7 @@
             </section>
 
             <section class="section-courses">
-                <h2 class="heading-courses">Most popular courses</h2>
+                <h2 class="heading-courses" id="courses">Most popular courses</h2>
                 <div class="courses">
                     <div class="panel">
                         <div class="panel__image panel__image--1">
@@ -112,7 +109,13 @@
                         </svg>
                         <div class="panel__info">
                             <h3 class="heading-course-title">Computer Science</h3> 
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nam, illo repellendus rerum culpa natus corporis ducimus, alias omnis deleniti mollitia qui modi, deserunt maiores tempore tempora perspiciatis laboriosam molestiae.
+                            Learn programming languages and concepts to prepare for a career in hardware or software development.
+                            Learn about and practice <br>
+                            • Algorithms and data structures <br>
+                            • Programming languages
+                            
+
+
                         </div>
                         <div class="panel__icons">
                             <div class="panel__icons--rating">
@@ -330,10 +333,95 @@
                 </div>
             </section>
 
+            <section class="section-info-language">
+                <div class="content-info">
+                    <div class="content-logo">
+                        
+                    </div>
+                </div>
+                <div class="content-quote">
+                    <h3 class="heading-quote">
+                        Everyone should know how to program a computer, because it teaches you how to think!
+                    </h3>
+                </div>
+
+            </section>
 
 
+             <!-- OUT OF ANY SECTION UNTIL SECTION LANGUAGES IS DONE -->
+            <div class="temporary-div" style="background-color: #f2f2f2">
+                <h2 class="heading-courses">Trending languages</h2>
+                    
+                <figure class="languages-logo">
+                    <img src="img/Languages.png" class="intro__brands-img" alt="">
+                </figure>
+
+            </div>
+
+            <!-- SECTION UNDER CONSTRUCCION DUE TO LACK OF IMAGINATION XDXDXD
+                
+            <section class="section-languages">
+
+                
+                <h2 class="heading-courses">Trending languages</h2>
+                
+                <figure class="languages-logo">
+                    <img src="img/Languages.png" class="intro__brands-img" alt="">
+                </figure>
+
+                <div class="languages">
+
+                    <div class="box">
+                        <div class="box__logo box__logo--1">
+
+                        </div>
+                        <div class="box__info">
+                            <h3 class="heading-languages">C#</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, velit libero repellendus nihil blanditiis atque eveniet aspernatur dolore iusto?
+                        </div>
+                    </div>
+                </div>
+            </section> -->
 
         </main>
+
+        <footer class="footer">
+            <div class="footer__topstyle"></div>
+
+            <div class="footer__container">
+                <div class="footer__info">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <div class="information">
+                        Phone: 809-968-1507 <br>
+                        Place: 402-000-0000 <br>
+                        Architecto dolorum porro commodi molestiae autem libero voluptates dignissimos, optio, consequuntur magnam itaque odit! Autem obcaecati qui numquam.
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-location"></use>
+                    </svg>
+                    <div class="information">
+                        Dominican Republic, Santo Domingo DR. Architecto dolorum porro commodi molestiae autem libero voluptates dignissimos, optio, consequuntur magnam itaque odit! Autem obcaecati qui numquam.
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-info"></use>
+                    </svg>
+                    <div class="information">
+                        This Web was built and designed by Gabriel Padilla. Architecto dolorum porro commodi molestiae autem libero voluptates dignissimos, optio, consequuntur magnam itaque odit! Autem obcaecati qui numquam.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__bottomstyle"></div>
+        </footer>
         
     </div>
     

@@ -8,17 +8,17 @@
 
 body{
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
     line-height: 1.7;
-    background: linear-gradient(120deg, #f9d423 0%, #e65c00 100%), no-repeat;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00);
-    background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #182c19, #091609, #1f1f1f);
+    /* background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00); */
+    
+    background-image: linear-gradient(to bottom, #00b618, #00880b, #005504, #091609, #1f1f1f);
 
 }
 
 .container{
-    margin: 8rem 8rem ;
+    margin: 5rem 8rem ;
     box-shadow: 0 2rem 6rem  rgba(black, .4); 
 }
 

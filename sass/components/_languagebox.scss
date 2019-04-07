@@ -1,0 +1,26 @@
+.language{
+
+}
+
+.box{
+    background-color: antiquewhite;
+    width: 45rem;
+    height: 20rem;
+    display: flex;
+
+    &__logo{
+        width: 30%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &--1{
+            background-image: url(../../img/CSharp.png);
+            
+        }
+    }
+
+    &__info{
+
+    }
+}

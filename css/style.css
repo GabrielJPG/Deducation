@@ -9,18 +9,16 @@
 
 body {
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, Arial, Helvetica;
   line-height: 1.7;
-  background: linear-gradient(120deg, #f9d423 0%, #e65c00 100%), no-repeat;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#01dc1d), color-stop(#03bf14), color-stop(#03a30c), color-stop(#028704), to(#006d00));
-  background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#01dc1d), color-stop(#03bf14), color-stop(#182c19), color-stop(#091609), to(#1f1f1f));
-  background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #182c19, #091609, #1f1f1f);
+  /* background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00); */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00b618), color-stop(#00880b), color-stop(#005504), color-stop(#091609), to(#1f1f1f));
+  background-image: linear-gradient(to bottom, #00b618, #00880b, #005504, #091609, #1f1f1f);
 }
 
 .container {
-  margin: 8rem 8rem;
+  margin: 5rem 8rem;
   -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.4);
 }
@@ -30,17 +28,26 @@ html {
 }
 
 .heading-primary {
-  font-size: 3.5rem;
-  color: #eee;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  font-size: 5rem;
+  color: #F7F9F9;
+  letter-spacing: 2px;
+  line-height: 5rem;
+  position: relative;
+  -webkit-animation-name: headerP;
+          animation-name: headerP;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .heading-secondary {
   font-size: 2.5rem;
   color: #eee;
   text-transform: uppercase;
+  margin-right: 1rem;
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 .heading-course-title {
@@ -61,16 +68,67 @@ html {
   width: 70rem;
   text-align: center;
   display: block;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
   margin: 0 auto;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+}
+
+.heading-quote {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#eee, #5e5e5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes loginPanel {
+  0% {
+    top: -1000px;
+  }
+  60% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes loginPanel {
+  0% {
+    top: -1000px;
+  }
+  60% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes headerP {
+  0% {
+    left: -100rem;
+    opacity: 0;
+  }
+  100% {
+    left: 0rem;
+    opacity: 1;
+  }
+}
+
+@keyframes headerP {
+  0% {
+    left: -100rem;
+    opacity: 0;
+  }
+  100% {
+    left: 0rem;
+    opacity: 1;
+  }
 }
 
 .header {
   width: 100%;
   padding-bottom: 5rem;
-  background: linear-gradient(114deg, rgba(18, 255, 4, 0.5) 13%, rgba(133, 255, 126, 0.3) 100%), url(../img/1__gg1Te-7SJfk9E2D-mORfw.png);
+  background: linear-gradient(114deg, rgba(8, 168, 0, 0.5) 13%, rgba(59, 117, 56, 0.3) 100%), url(../img/1__gg1Te-7SJfk9E2D-mORfw.png);
   background-size: cover;
   -webkit-clip-path: polygon(100% 0, 100% 85%, 71% 85%, 0 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 85%, 71% 85%, 0 100%, 0 100%, 0 0);
@@ -83,16 +141,25 @@ html {
 }
 
 .header__title {
-  color: #777;
   -webkit-box-flex: 0;
-      -ms-flex: 0 2 155rem;
-          flex: 0 2 155rem;
-  padding: 5rem 5rem 10rem 10rem;
+      -ms-flex: 0 2 70rem;
+          flex: 0 2 70rem;
+  padding: 5rem 5rem 15rem 15rem;
 }
 
 .header__paragraph {
+  margin-top: 1rem;
   font-size: 2rem;
   color: whitesmoke;
+  position: relative;
+  -webkit-animation-name: headerP;
+          animation-name: headerP;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .header__login {
@@ -189,17 +256,66 @@ html {
   cursor: pointer;
 }
 
+.footer {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.footer__topstyle {
+  width: 100%;
+  height: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#36da08), to(#0b2900));
+  background: linear-gradient(to right, #36da08, #0b2900);
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__info {
+  width: 25rem;
+  margin-top: 5rem;
+}
+
+.footer__info .icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  display: block;
+  fill: #ececec;
+}
+
+.footer__info .information {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ececec;
+}
+
+.footer__bottomstyle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ececec), to(#252525));
+  background: linear-gradient(to right, #ececec, #252525);
+}
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  padding: .5rem 1.5rem;
+  padding: 1rem 2rem;
   display: inline-block;
   -webkit-transition: all .2s;
   transition: all .2s;
   color: white;
   background: linear-gradient(120deg, #01dc1d 0%, #03a30c 145%);
-  /* background-image: linear-gradient(to bottom, #01dc1d, #03bf14, #03a30c, #028704, #006d00); */
   border: none;
   cursor: pointer;
 }
@@ -236,6 +352,13 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 1.7rem;
+  position: relative;
+  -webkit-animation-name: loginPanel;
+          animation-name: loginPanel;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .login-panel__heading {
@@ -279,7 +402,7 @@ html {
   padding: 1rem;
   border: none;
   border-radius: 2px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   border-bottom: 3px solid transparent;
 }
 
@@ -288,6 +411,22 @@ html {
   border-bottom: 3px solid #03bf14;
   -webkit-box-shadow: 0 1rem 2rem rgba(31, 31, 31, 0.205);
           box-shadow: 0 1rem 2rem rgba(31, 31, 31, 0.205);
+}
+
+.login-panel__paragraph {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #909497;
+  padding: 1rem;
+}
+
+.login-panel__paragraph a {
+  text-decoration: none;
+  color: #2980B9;
+}
+
+.login-panel__paragraph a:hover {
+  text-decoration: underline;
 }
 
 .courses {
@@ -392,7 +531,7 @@ html {
 }
 
 .panel__info {
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: 1.3rem;
   position: relative;
 }
@@ -437,6 +576,26 @@ html {
   margin-left: 1rem;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.box {
+  background-color: antiquewhite;
+  width: 45rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box__logo {
+  width: 30%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box__logo--1 {
+  background-image: url(../../img/CSharp.png);
 }
 
 .section-about {
@@ -538,7 +697,9 @@ html {
 }
 
 .content__heading h2 {
-  color: #8d8d8d;
+  background: -webkit-linear-gradient(#eee, #5e5e5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 4rem;
   line-height: 4.5rem;
 }
@@ -553,6 +714,62 @@ html {
   -webkit-clip-path: polygon(53% 0%, 100% 0, 100% 100%, 0 100%, 0 8%);
           clip-path: polygon(53% 0%, 100% 0, 100% 100%, 0 100%, 0 8%);
   margin-top: -15rem;
-  padding: 13rem 5rem;
+  padding: 13rem 5rem 8rem 5rem;
+}
+
+.section-info-language {
+  height: 25rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #161616;
+}
+
+.content-info {
+  width: 55rem;
+  height: 100%;
+  background-image: linear-gradient(105deg, transparent 45%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%), url(../img/PeoplePrograming.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.content-logo {
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/UIHere.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+}
+
+.content-quote {
+  width: 60rem;
+  padding: 5rem;
+}
+
+.section-languages {
+  width: 100%;
+  height: 100rem;
+  padding: 8rem 5rem 5rem 5rem;
+  background-color: #f7f7f7;
+}
+
+.languages-logo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: -8rem;
+  padding-bottom: 5rem;
+}
+
+.temporary-div {
+  padding-top: 10rem;
 }
 /*# sourceMappingURL=style.css.map */

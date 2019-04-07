@@ -90,7 +90,9 @@
         flex: 1 1 75rem;
         padding: 1rem 5rem 5rem 5rem;
         & h2{
-            color:rgb(141, 141, 141);
+            background: -webkit-linear-gradient(#eee, #5e5e5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 4rem;
             line-height: 4.5rem;
         }
@@ -107,6 +109,67 @@
     background-color: #f7f7f7;
     clip-path: polygon(53% 0%, 100% 0, 100% 100%, 0 100%, 0 8%);
     margin-top: -15rem;
-    padding: 13rem 5rem;
+    padding: 13rem 5rem 8rem 5rem;
     
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//// SECTION INFO LANGUAGES
+.section-info-language{
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    background-color: #161616;
+}
+
+ .content-info{
+    width: 55rem;
+    height: 100%;
+    background-image: linear-gradient(105deg, transparent 45%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%), url(../img/PeoplePrograming.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    
+} 
+
+.content-logo{
+    width: 15rem;
+    height: 15rem;
+    background-image: url(../img/UIHere.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+}
+
+.content-quote{
+    width: 60rem;
+    padding: 5rem;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+////SECTION LANGUAGES
+
+.section-languages{
+    width: 100%;
+    height: 100rem;
+    padding: 8rem 5rem 5rem 5rem;
+    background-color: #f7f7f7;
+}
+
+.languages-logo{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: -8rem;
+    padding-bottom: 5rem;
+    
+}
+
+///////////////////////////////////////////
+///TEMPORARY SECTION
+.temporary-div{
+    padding-top: 10rem;
 }
