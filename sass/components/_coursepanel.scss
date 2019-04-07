@@ -21,21 +21,18 @@
 
         .heading-course-title{
             opacity: 1;
-            transition: all .3s;
-            position: absolute;
             top: -4rem;
         }
 
         .panel__image{
             filter: blur(1.3px) saturate(1) opacity(0.90) contrast(108%);
             transform: scale(1.1);
-            transition: all .3s ease-in-out;
         }
 
         .panel__image--icon{
             top: 1rem;
             opacity: 1;
-            transition: all .3s;
+           
         }
     }
     
@@ -44,14 +41,33 @@
         width: 100%;
         height: 45%;
         padding: 1rem;
-        
-        background-image: url(../img/science.png);
         background-size: cover;
         background-position: bottom;
         position: relative;
+        transition: all .3s ease-in-out;
+        
+        &--1{
+            background-image: url(../img/science.png);
+        }
 
         &--2{
             background-image: url(../img/Computer-Science-HD-Image.png);
+        }
+
+        &--3{
+            background-image: url(../img/DataScience.jpg);
+        }
+
+        &--4{
+            background-image: url(../img/WebDesign.jpg);
+        }
+
+        &--5{
+            background-image: url(../img/Photoshop.jpg);
+        }
+
+        &--6{
+            background-image: url(../img/InternetOfThings.jpg);
         }
         
         &--icon{
@@ -61,6 +77,7 @@
             top: -1.5rem;
             right: 1rem;
             opacity: 0;
+            transition: all .3s;
             fill: rgb(3, 191, 20);
             cursor: pointer;
 

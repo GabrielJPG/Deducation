@@ -5,6 +5,8 @@
     opacity: 0;
     top: 1rem;
     position: absolute;
+    cursor: pointer;
+    transition: all .3s;
 }
 
 .heading-courses{
@@ -13,6 +15,7 @@
     width: 70rem;
     text-align: center;
     display: block;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     margin: 0 auto;
+    transition: all .3s;
 }
