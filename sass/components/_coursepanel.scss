@@ -15,6 +15,11 @@
     position: relative;
     overflow: hidden;
 
+    @include respond(900){
+        
+        padding-bottom: 12rem;
+    }
+
     &:hover{
         transition: all .3s;
         box-shadow: 0px 0px 15px rgba(158,158,158,1);

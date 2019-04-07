@@ -7,7 +7,11 @@
     position: relative;
     animation-name: headerP;
 	animation-duration: 2s;
-	animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    
+    @media screen and (min-width: 900px) {
+        color: red;
+    }
 }
 
 .heading-secondary{
